@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    /* remove annoying default browser margin*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+
+/*zaio logo on the left*/
+header .logo{
+    width: 100px ;
+    height : 100px; 
+}
+
+.banner h4{
+   color: #fff; 
+}
+
+    /* here we css the text on the banner*/
+   section{
+        padding: 100px ;
+
+   }
+/* this a simple box layout that controls the bahavior of our background image*/
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: url(img/banner.jpg);
+    background-size: cover;
+    background-position:right ; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+     
+}
+/**/
+/*any h2 inside the banner we apply this..*/
+.banner h2{
+    font-size:  3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em ;
+}
+/*any span h2 inside the banner we apply this..*/
+.banner h2 span{
+    font-size:  1.5em;
+    font-weight: 700;
+
+}
+/*any h3 inside the banner we apply this..*/
+.banner h3{
+    font-size:  1.3em;
+    color: #fff;
+    font-weight: 500;
+     
+}
+
+/* style the about me button*/
+.navbtn{
+     background-color: #fe7900; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+
+/* style the about me button*/
+.btn{
+    position: relative ;
+    background: #fe7900;
+    display:inline-block;
+    color: #fff;
+    margin-top: 20px ;
+    padding: 10px 30px;
+    font-size:18px ;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+/*style the menu options*/
+header
+{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100% ;
+    padding: 40px 100px;
+    z-index: 100 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    
+}
+/*Edit the header when usesr scrolling down*/
+header.sticky {
+    background: #fff;
+    padding: 40px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,1);
+ 
+
+
+
+}
+
+
+
+/*any logo pic inside the menu header we apply this..*/
+header .logo{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase ;
+    text-decoration: none ;
+    font-weight: 700;
+    letter-spacing: 2px;
+   
+     }
+
+/*the behavior of the header logo when user scroll */ 
+header.sticky .logo{
+  
+   background: url(img/logo_blue.png) ;
+
+}
+
+/*the behavior of the header logo when user scroll */ 
+header.sticky .navbtn{
+  
+    /*background: url(img/logo_blue.jpg);*/
+
+}
+
+/*align top menu links   */
+ header ul{
+     position: relative;
+     display: flex;
+ }    
+ header ul li {
+     position: relative;
+     list-style: none;
+
+ }
+
+ header ul li a{
+    position: relative;
+    display : inline-block;
+    margin: 0 15px ; 
+    color:#fff;
+    text-decoration: none;
+
+}
+
+/*the behavior of the header links when user scroll */
+header.sticky ul li a{
+   color: #111;
+
+}
+/*change logo */
+header.sticky img {
+   color: #111;
+   background: url(img/logo_blue.png);
+ 
+}
+
+/*So here we align  the "about me" DIV */
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+
+
+}
+/*align the "about me" TEXT */
+.heading h2{
+    font-weight:600 ;
+    font-style: 30px;
+}
+/*edit the description below the about me*/
+.content{
+    display: flex ;
+    justify-content: space-between;
+  
+
+}
+/*create space between para and image*/
+.ContentTxT{
+    padding-right: 30px;
+}
+/*edit the "iam a developer title"*/
+.ContentTxT h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: #ecf0fe;
+
+}
+ /* align parag div  wit image div*/
+.txt{
+   min-width: 50%;  
+}
+img{
+   max-width: 100%;
+   
+} 
+
+ /* add grey blackground*/
+.skills{
+    background: #ecf0fe;
+
+}
+ /* turn the text to  white behind grey background*/
+.heading.white{
+    color: #0f2137;
+}
+/* content in the services */
+.skills.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.skills h2{
+   color: #0f2137;
+}
+
+/*images + descr in the skills section,add background +turn txt white*/
+.skills .content .skillsTxT {
+    padding : 40px 20px ;
+    background: #ecf0fe;
+    color: rgba(52,61,72,0.8);
+    max-width: 340px;
+    margin :20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+/*css for thhe projects section*/
+
+.skills .content .skillsTxT h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.proj .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+
+}
+.proj .content .projTxT {
+    width: 50% ;
+    padding: 20px;
+   
+
+}
+
+.proj .content .projTxT img {
+    max-width: 100%;
+     
+}
+
+
+.proj{
+    background-color: #fff;
+}
+
+/**/
+
+
+/* responsive */
+@media (max-width: 991px){
+    
+    header,header.sticky
+      {
+        padding: 20px 50px;
+        z-index:  1000;
+    } 
+    .menu{
+        position : fixed;
+        top : 75px;
+        left : -100%;
+        display: block;
+        padding: 100px 50px ;
+        text-align: center;
+        width :100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index:999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+
+
+    }
+
+    /*toggle menu css*/
+    .menu.active {
+        left : 0;
+    }
+
+    header ul li a 
+    {
+        color: #111 ;
+        font-size: 24px;
+        margin: 10px;
+
+    } 
+    .ON {
+      width: 40px;
+      height: 40px;
+      background: url(img/menu.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      cursor: pointer;
+
+
+
+
+
+
+    }
+    .ON.active{
+
+      background: url(img/close.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      cursor: pointer;
+
+    }
+
+    header.sticky .toggle {
+        filter: invert(1);
+    }
+    section{
+        padding: 100px 50px ;
+
+    }
+    .banner{
+        padding: 150px  50px 100px;
+
+    } 
+    .banner h2 {
+        font-size: 1.5em ;
+         
+    }
+
+    .banner h3 {
+        font-size: 1em ;
+         
+    } 
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2{
+        font-size: 24px;
+
+    }
+
+    contentTxT h3{
+        font-size: 20px;
+    }
+    .skills .content .skillsTxT{
+        margin: 10px;
+ 
+    }
+    
+
+}
+@media (max-width:600px){
+    header,header.sticky
+    {
+      padding: 20px 20px;
+      
+  } 
+  .banner{
+      padding: 150px 50px 100px;
+  }
+  section {
+      padding: 100px 20px;
+      background-color: #ecf0fe
+   }
+}
+
+.align{
+    display:flex;
+    justify-content: center;
+}
+body {
+    background-color: #ecf0fe;
+}
+
+/*code to make lists with image*/
+
+.flexcontainer {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 320px) {
+  .flexcontainer {
+    display: block;
+
+  }
+}
+
+
+.footer {
+  padding: 100px 0;
+  color: #ffffff;
+  position: relative;
+  overflow-x: hidden;
+  background-color: #16325b;
+}
+
+
+.footer .logo-container {
+  width: 120px;
+  margin: 0 auto 20px auto;
+}
+
+.footer .logo-container img {
+  width: 100%;
+}
+
+.footer .footer-nav ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.footer .footer-nav ul li {
+  padding: 10px 20px;
+}
+
+.footer .footer-nav ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer .copyright {
+  font-size: 14px;
+  text-align: center;
+}
+
+.footer .copyright p {
+  margin: 0 auto;
+}
+
+
+
